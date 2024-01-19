@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Book Library</div>
+            <div class="login">LogIn</div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="addbook">
+            <button id="addbook">+ Add Book</button>
+        </div>
+
+        <div class="hero">
+        
+            <!-- <div class="mainbox">
+                <div class="box">
+                    <span id="bookname">Book Name</span>
+                    <span id="authorname">Author Name</span>
+                    <span id="pagecount">pages</span>
+    
+                    <div class="button">
+                        <button id="readstatus">Read Status</button>
+                        <button id="removebook">Remove</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        
+        
+        </div>
+        
+
+        <!-- A modal dialog containing a form -->
+        <dialog id="bookdetailsform">
+            <form>
+                <h3>Add New Book</h3>
+                <input id="title" type="text" placeholder="Title" required>
+                <input id="author"  type="text" placeholder="Author" required>
+                <input id="pages" type="number" placeholder="Pages" required>
+                <div class="check" >
+                    <label>Have You Read It?</label>
+                    <input class="checkbox" type="checkbox">
+                </div>
+               
+                <button>Submit</button>
+            </form>
+        </dialog>
+       
+
+
+
+
+
+
+
+
+
+    </div>
+    <footer>
+        @Copyright Aman
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

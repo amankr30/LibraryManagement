@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+nav {
+  background-color: rgba(16, 6, 30, 0.77);
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 8%;
+    font-size: 1.6rem;
+    background-image: linear-gradient(45deg, #88ffc0b3, #000000ed);
+ 
+}
+
+.login {
+  background-color: rgb(8, 163, 168);
+  color: wheat;
+  padding: 6px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.addbook {
+  display: flex;
+  justify-content: center;
+}
+.addbook button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  margin: 3% 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.addbook button:hover{
+    background-color: rgb(185, 183, 183);
+    transition: all ease-out 1s;
+
+}
+
+.hero{
+  display: flex;
+  column-gap: 6%;
+}
+
+.mainbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dae6e6;
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  line-height: 35px;
+}
+
+.box input{
+  margin-top: 10px;
+}
+
+.button {
+  display: inline-grid;
+  width: 100%;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.button button {
+  padding: 8px 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: rgb(80, 78, 78);
+  color: white;
+  border-radius: 5px;
+}
+
+.button button:hover {
+  background-color: rgb(110, 108, 108);
+}
+
+footer {
+  background-color: #e6b57b;
+  margin-top: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  
+}
+
+#bookdetailsform {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 8px;
+  background: #9b92924f;
+  overflow: hidden;
+  
+}
+
+#bookdetailsform form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 0 12px;
+}
+
+#bookdetailsform form button{
+  padding: 6px 20px;
+  outline: none;
+  border: none;
+  background-color: #73918e;
+  border-radius: 18px;
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#bookdetailsform form input{
+  
+  padding: 6px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox{
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  accent-color: white;
+  outline: none;
+  
+}
+
+#bookdetailsform {
+  background-image: linear-gradient(45deg,#007a80,#c1b256); /* Blue background color with some transparency */
+  z-index: 1; /* Set z-index to bring the form to the front */
+  position: fixed; /* Ensure the form stays in place while scrolling */
+  display: none; /* Initially hide the form */
+}
+
+#bookdetailsform.show {
+  display: block; /* Display the form when the 'show' class is added */
+}
+
+#bookdetailsform::backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for the backdrop */
+}
+
+@media only screen and (max-width: 708px) {
+  .mainbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .button {
+    margin-top: 15px;
+  }
+
+  .button button {
+    font-size: 1rem;
+  }
+
+  footer{
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  
+#bookdetailsform {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  border: none;
+  padding: 20px 20px;
+  border-radius: 8px;
+  background: #9b92924f;
+  overflow: hidden;
+  
+}
+
+#bookdetailsform form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 0 12px;
+}
+
+#bookdetailsform form button{
+  padding: 6px 20px;
+  outline: none;
+  border: none;
+  background-color: #73918e;
+  border-radius: 18px;
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#bookdetailsform form input{
+  
+  padding: 6px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+}
